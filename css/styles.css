@@ -1,49 +1,60 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #121212f6;
     color: #ffffff;
     padding-top: 70px; /* to offset the fixed navbar */
 }
-html {
-    scroll-behavior: smooth;
+
+li:hover, #projects .card:hover {
+    transform: scale(1.06);
 }
+
 .navbar-brand {
     font-weight: bold;
 }
 
+/* Jumbotron */
 .jumbotron {
     background: url('images/header-bg.jpg') no-repeat center center;
     background-size: cover;
     color: white;
 }
-li:hover{transform: scale(1.06);}
+
+/* Sections */
 .section {
     padding: 60px 0;
 }
 
-#projects .card {
+/* Cards and List Items */
+.list-group-item, .card {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #343a40;
     transition: transform 0.2s;
 }
 
-#projects .card:hover {
-    transform: scale(1.05);
+#projects .card {
+    border: 1px solid #343a40;
+    transition: transform 0.2s;
 }
 
 .list-group-item {
-    background-color: #343a40;
-    color: white;
     border: none;
 }
 
-.card {
-    border: 1px solid #343a40;
-}
-
+/* Footer */
 #footer {
     background-color: #212121;
     padding: 20px 0;
 }
+
+/* Navbar */
 .navbar-nav {
     width: 100%;
-    justify-content: center ;
+    justify-content: center;
 }

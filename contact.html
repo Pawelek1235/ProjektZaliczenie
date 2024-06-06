@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
+        body {
+            padding-top: 70px; /* to offset the fixed navbar */
+        }
         .contact-section {
             padding-top: 100px;
         }
@@ -22,17 +25,10 @@
         .btn-primary:hover {
             background-color: #0056b3;
         }
-        .form-check-label {
-            padding-left: 1.25rem;
-        }
-        .form-group label {
-            font-size: 0.9rem;
-        }
-        .form-control {
+        .form-check-label, .form-group label, .form-control, .btn-primary {
             font-size: 0.9rem;
         }
         .btn-primary {
-            font-size: 0.9rem;
             padding: 0.5rem 1rem;
         }
         footer {
@@ -46,15 +42,15 @@
         footer a:hover {
             color: #fff;
         }
-        footer .social-icons {
+        .social-icons {
             margin-top: 10px;
         }
-        footer .social-icons a {
+        .social-icons a {
             color: #aaa;
             margin: 0 10px;
             text-decoration: none;
         }
-        footer .social-icons a:hover {
+        .social-icons a:hover {
             color: #fff;
         }
     </style>

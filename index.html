@@ -8,78 +8,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            background-color: #121212; /* Dark background for the entire page */
-            color: #e0e0e0; /* Light gray text for readability */
-        }
-        #about {
-            background-color: #1e1e1e; /* Slightly lighter dark background */
-            border: 2px solid #282828; /* Dark border */
-            border-radius: 10px;
-            padding: 20px;
-            margin: 0 15px;
-        }
-        .list-group-item {
-            background-color: #2a2a2a; /* Dark gray background for list items */
-            border: 1px solid #404040; /* Dark border for list items */
-            border-radius: 5px;
-            margin-bottom: 10px;
-            color: #e0e0e0; /* Light gray text */
-        }
-        .header-title {
-            font-size: 2.5rem;
-        }
-        .section-title {
-            font-size: 1.75rem;
-            margin-top: 20px;
-        }
-        .courses-exams .list-group-item {
-            border: 2px solid #404040;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .education-card {
-            border: 2px solid #404040;
-            border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 20px;
-            background-color: #2a2a2a; /* Same dark gray background */
-        }
-        .navbar {
-            background-color: #181818; /* Dark navbar background */
-        }
-        .navbar-nav .nav-link {
-            color: #e0e0e0; /* Light gray text for navbar links */
-        }
-        .navbar-nav .nav-link:hover {
-            color: #b0b0b0; /* Slightly lighter gray on hover */
-        }
-        .jumbotron {
-            background-color: #1e1e1e; /* Dark background for the header */
-        }
-        .jumbotron .lead {
-            color: #b0b0b0; /* Slightly lighter gray text for lead */
-        }
-        .btn-primary {
-            background-color: #4a4a4a; /* Dark gray buttons */
-            border-color: #4a4a4a;
-        }
-        .btn-primary:hover {
-            background-color: #5a5a5a; /* Slightly lighter on hover */
-            border-color: #5a5a5a;
-        }
-        footer {
-            background-color: #181818; /* Dark footer background */
-        }
-        .project-image {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-       
+       html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+#about,
+.education-card,
+.courses-exams .list-group-item,
+.navbar,
+.jumbotron,
+.btn-primary,
+footer,
+.card,
+.list-group-item {
+    background-color: #1e1e1e;
+    border: 2px solid #404040;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link,
+.jumbotron .lead,
+.list-group-item,
+.card-title,
+.btn-primary,
+footer p {
+    color: #e0e0e0;
+}
+
+.navbar-nav .nav-link:hover,
+.btn-primary:hover {
+    color: #b0b0b0;
+    background-color: #5a5a5a;
+}
+
+#about {
+    padding: 20px;
+    margin: 0 15px;
+}
+
+.list-group-item {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-size: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    margin-top: 20px;
+}
+
+.education-card {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
     </style>
 </head>
 <body>
@@ -90,24 +90,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about"><i class="fas fa-user"></i> About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#details"><i class="fas fa-info-circle"></i> Details</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Form</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Pawelek1235" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#details"><i class="fas fa-info-circle"></i> Details</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/Pawelek1235" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
             </ul>
         </div>
     </nav>
@@ -167,9 +155,9 @@
         <div class="container">
             <h2 class="section-title"><i class="fas fa-language"></i> Languages</h2>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-dark text-white">POLISH - Native</li>
-                <li class="list-group-item bg-dark text-white">ENGLISH - C1 (Advanced)</li>
-                <li class="list-group-item bg-dark text-white">GERMAN - B1 (Intermediate)</li>
+                <li class="list-group-item">POLISH - Native</li>
+                <li class="list-group-item">ENGLISH - C1 (Advanced)</li>
+                <li class="list-group-item">GERMAN - B1 (Intermediate)</li>
             </ul>
         </div>
     </section>
@@ -179,11 +167,11 @@
         <div class="container">
             <h2 class="section-title"><i class="fas fa-book"></i> Courses and Exams</h2>
             <ul class="list-group list-group-flush courses-exams">
-                <li class="list-group-item bg-dark text-white">CISCO IT Essentials</li>
-                <li class="list-group-item bg-dark text-white">CISCO CCNA</li>
-                <li class="list-group-item bg-dark text-white">EE.08</li>
-                <li class="list-group-item bg-dark text-white">INF.02</li>
-                <li class="list-group-item bg-dark text-white">INF.03</li>
+                <li class="list-group-item">CISCO IT Essentials</li>
+                <li class="list-group-item">CISCO CCNA</li>
+                <li class="list-group-item">EE.08</li>
+                <li class="list-group-item">INF.02</li>
+                <li class="list-group-item">INF.03</li>
             </ul>
         </div>
     </section>
@@ -195,56 +183,56 @@
             <div class="row">
                 <!-- Contact -->
                 <div class="col-lg-6 mb-4">
-                    <div class="card h-100 bg-dark text-white">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title"><i class="fas fa-address-book"></i> Contact</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-phone"></i> +48 601 573 264</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-envelope"></i> elc.pawel@interia.pl</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-map-marker-alt"></i> Limanowa</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-map-marker-alt"></i> 34-600</li>
+                                <li class="list-group-item"><i class="fas fa-phone"></i> +48 601 573 264</li>
+                                <li class="list-group-item"><i class="fas fa-envelope"></i> elc.pawel@interia.pl</li>
+                                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Limanowa</li>
+                                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> 34-600</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- Personal Skills -->
                 <div class="col-lg-6 mb-4">
-                    <div class="card h-100 bg-dark text-white">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title"><i class="fas fa-star"></i> Skills</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-lightbulb"></i> Creativity</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-users"></i> Cooperation skills</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-clock"></i> Punctuality</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-balance-scale"></i> Patience</li>
+                                <li class="list-group-item"><i class="fas fa-lightbulb"></i> Creativity</li>
+                                <li class="list-group-item"><i class="fas fa-users"></i> Cooperation skills</li>
+                                <li class="list-group-item"><i class="fas fa-clock"></i> Punctuality</li>
+                                <li class="list-group-item"><i class="fas fa-balance-scale"></i> Patience</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- Interests -->
                 <div class="col-lg-6 mb-4">
-                    <div class="card h-100 bg-dark text-white">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title"><i class="fas fa-heart"></i> Interests</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-code"></i> Coding</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-gamepad"></i> Game Development</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-video"></i> Video editing</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fas fa-lightbulb"></i> New technologies</li>
+                                <li class="list-group-item"><i class="fas fa-code"></i> Coding</li>
+                                <li class="list-group-item"><i class="fas fa-gamepad"></i> Game Development</li>
+                                <li class="list-group-item"><i class="fas fa-video"></i> Video editing</li>
+                                <li class="list-group-item"><i class="fas fa-lightbulb"></i> New technologies</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- Programming Languages -->
                 <div class="col-lg-6 mb-4">
-                    <div class="card h-100 bg-dark text-white">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title"><i class="fas fa-code"></i> Programming Languages</h3>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-dark text-white"><i class="fab fa-cuttlefish"></i> C#</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fab fa-js"></i> JavaScript</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fab fa-cuttlefish"></i> C++</li>
-                                <li class="list-group-item bg-dark text-white"><i class="fab fa-angular"></i> Angular/React</li>
+                                <li class="list-group-item"><i class="fab fa-cuttlefish"></i> C#</li>
+                                <li class="list-group-item"><i class="fab fa-js"></i> JavaScript</li>
+                                <li class="list-group-item"><i class="fab fa-cuttlefish"></i> C++</li>
+                                <li class="list-group-item"><i class="fab fa-angular"></i> Angular/React</li>
                             </ul>
                         </div>
                     </div>
@@ -260,7 +248,6 @@
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="card h-100 bg-secondary text-white">
-                     
                         <div class="card-body">
                             <h3 class="card-title">Rogue RPG</h3>
                             <p class="card-text">My first major project was a traditional Roguelike with elements of bullet hell. While coding it, I created a few game systems. It features text mode graphics, a simple menu system, and a variety of weapons and enemies. It was made using the PDCurses library in C++. This project taught me to create a working prototype of a complex system.</p>
@@ -270,7 +257,6 @@
                 </div>
                 <div class="col-lg-6 mb-4">
                     <div class="card h-100 bg-secondary text-white">
-                       
                         <div class="card-body">
                             <h3 class="card-title">Building Corporation Website</h3>
                             <p class="card-text">A project for a real client made in my first class of technical high school, using the latest technology at that time (Spring Boot). The website featured a simple but elegant UI and back-end, thanks to Spring Boot. This project taught me a lot about creating a dynamic website.</p>
@@ -280,7 +266,6 @@
                 </div>
                 <div class="col-lg-6 mb-4">
                     <div class="card h-100 bg-secondary text-white">
-                       
                         <div class="card-body">
                             <h3 class="card-title">CRUD Web Application</h3>
                             <p class="card-text">One of the projects for my technical high school diploma. The goal was to create a database with a UI for easy manipulation. I used technologies such as JavaScript, Node.js, and MySQL. This project taught me the core concepts of CRUD (Create, Read, Update, Delete) and database manipulation.</p>
@@ -290,7 +275,6 @@
                 </div>
                 <div class="col-lg-6 mb-4">
                     <div class="card h-100 bg-secondary text-white">
-                      
                         <div class="card-body">
                             <h3 class="card-title">E-commerce Platform</h3>
                             <p class="card-text">A full-featured e-commerce platform developed using React for the front-end and Node.js for the back-end. This project includes user authentication, product management, and payment processing. It was a comprehensive learning experience that covered both front-end and back-end development.</p>
@@ -317,9 +301,5 @@
             <p>&copy; 2024 Paweł Tokarczyk. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Bootstrap JavaScript -->
-   
-   
 </body>
 </html>

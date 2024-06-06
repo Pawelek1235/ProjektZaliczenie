@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding-top: 70px; /* to offset the fixed navbar */
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: url('images/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+#projects .card {
+    transition: transform 0.2s;
+}
+
+#projects .card:hover {
+    transform: scale(1.05);
+}
+
+.list-group-item {
+    background-color: #343a40;
+    color: white;
+    border: none;
+}
+
+.card {
+    border: 1px solid #343a40;
+}
+
+footer {
+    background-color: #212121;
+    padding: 20px 0;
+}

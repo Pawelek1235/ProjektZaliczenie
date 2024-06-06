@@ -16,7 +16,7 @@ html {
     background-size: cover;
     color: white;
 }
-
+li:hover{transform: scale(1.06);}
 .section {
     padding: 60px 0;
 }

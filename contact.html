@@ -34,6 +34,28 @@
             font-size: 0.9rem;
             padding: 0.5rem 1rem;
         }
+        footer {
+            background-color: #222;
+            color: #aaa;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #aaa;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        footer .social-icons {
+            margin-top: 10px;
+        }
+        footer .social-icons a {
+            color: #aaa;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer .social-icons a:hover {
+            color: #fff;
+        }
     </style>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -45,24 +67,18 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="index.html">Portfolio</a>
+       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#about">About Me</a>
+                    <a class="nav-link" href="index.html">Main page</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#details">Details</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Form</a>
-                </li>
+            </li>   <li class="nav-item">
+                <a class="nav-link" href="https://github.com/Pawelek1235" target="_blank">GitHub</a>
+            </li>
             </ul>
         </div>
     </nav>
@@ -101,9 +117,14 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-4 bg-dark text-white">
+    <footer class="text-center">
         <div class="container">
             <p>&copy; 2024 Paweł Tokarczyk. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/pawel-tokarczyk" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/paweltokarczyk" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/paweltokarczyk" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 

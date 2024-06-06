@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        html {
+             html {
             scroll-behavior: smooth;
         }
         #about {
@@ -15,6 +15,7 @@
             border: 2px solid #343a40;
             border-radius: 10px;
             padding: 20px;
+            margin: 0 15px; /* Added margin for left and right */
         }
         .list-group-item {
             border: 1px solid #fff;
@@ -33,12 +34,13 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
+        
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Portfolio</a>
+ 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,15 +52,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#education">Education</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
+                 <li class="nav-item">
                     <a class="nav-link" href="#details">Details</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Form</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Form</a>
+                </li>   <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Pawelek1235" target="_blank">GitHub</a>
+                </li>
+                
             </ul>
         </div>
     </nav>
@@ -82,8 +88,6 @@
                     <p>Over the years, I have worked on numerous projects, ranging from simple websites to complex software applications. Each project has been an opportunity to learn and grow, pushing the boundaries of what I thought was possible. My experience includes working with languages and frameworks such as C#, JavaScript, Angular, React, and C++. I have a deep understanding of both front-end and back-end development, allowing me to create seamless and efficient applications.</p>
                     <p>In addition to my technical skills, I pride myself on my creativity, cooperation skills, punctuality, and patience. These attributes have not only helped me succeed in my professional endeavors but have also made me a valuable team member in collaborative projects. I believe that the best solutions come from diverse perspectives and open communication, and I strive to foster these principles in every team I work with.</p>
                     <p>Apart from my professional life, I have a wide range of interests that keep me inspired and motivated. I enjoy coding not just as a profession but also as a hobby, constantly exploring new technologies and frameworks. Game development is another passion of mine, as it allows me to blend my love for storytelling and technology. I also have a keen interest in video editing, which has taught me the importance of attention to detail and creativity.</p>
-                    <p>When I'm not coding or working on projects, I enjoy immersing myself in the world of anime and manga. These creative mediums provide a rich source of inspiration and relaxation. Additionally, I am always eager to learn about new technologies and trends in the tech industry, staying up-to-date with the latest advancements.</p>
-                    <p>In conclusion, my journey as a software developer is driven by a deep passion for technology and continuous learning. I am always on the lookout for new challenges and opportunities to expand my skills and contribute to exciting projects. Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
                 </div>
             </div>
         </div>
@@ -114,7 +118,6 @@
                 <li class="list-group-item bg-dark text-white">POLISH - Native</li>
                 <li class="list-group-item bg-dark text-white">ENGLISH - C1 (Advanced)</li>
                 <li class="list-group-item bg-dark text-white">GERMAN - B1 (Intermediate)</li>
-                <li class="list-group-item bg-dark text-white">JAPANESE - A1 (Beginner)</li>
             </ul>
         </div>
     </section>
@@ -197,62 +200,51 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-secondary text-white text-center">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of project 1.</p>
-                        </div>
+   <!-- Projects Section -->
+<section id="projects" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+        <h2 class="section-title text-center"><i class="fas fa-folder-open"></i> Projects</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 bg-secondary text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Rogue RPG</h3>
+                        <p class="card-text">My first major project was a traditional Roguelike with elements of bullet hell. While coding it, I created a few game systems. It features text mode graphics, a simple menu system, and a variety of weapons and enemies. It was made using the PDCurses library in C++. This project taught me to create a working prototype of a complex system.</p>
+                        <a href="https://github.com/Pawelek1235?tab=repositories" class="btn btn-primary">View on GitHub</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of project 2.</p>
-                        </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 bg-secondary text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Building Corporation Website</h3>
+                        <p class="card-text">A project for a real client made in my first class of technical high school, using the latest technology at that time (Spring Boot). The website featured a simple but elegant UI and back-end, thanks to Spring Boot. This project taught me a lot about creating a dynamic website.</p>
+                        <a href="https://github.com/Pawelek1235?tab=repositories" class="btn btn-primary">View on GitHub</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Description of project 3.</p>
-                        </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 bg-secondary text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">CRUD Web Application</h3>
+                        <p class="card-text">One of the projects for my technical high school diploma. The goal was to create a database with a UI for easy manipulation. I used technologies such as JavaScript, Node.js, and MySQL. This project taught me the core concepts of CRUD (Create, Read, Update, Delete) and database manipulation.</p>
+                        <a href="https://github.com/Pawelek1235?tab=repositories" class="btn btn-primary">View on GitHub</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 4</h5>
-                            <p class="card-text">Description of project 4.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 5</h5>
-                            <p class="card-text">Description of project 5.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 6</h5>
-                            <p class="card-text">Description of project 6.</p>
-                        </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 bg-secondary text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">E-commerce Platform</h3>
+                        <p class="card-text">A full-featured e-commerce platform developed using React for the front-end and Node.js for the back-end. This project includes user authentication, product management, and payment processing. It was a comprehensive learning experience that covered both front-end and back-end development.</p>
+                        <a href="https://github.com/Pawelek1235?tab=repositories" class="btn btn-primary">View on GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="text-center py-4 bg-dark text-white">

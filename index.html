@@ -1,452 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <style>
-       html {
-    scroll-behavior: smooth;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
 
-body {
-    background-color: #121212;
-    color: #e0e0e0;
-}
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
 
-*,
-::before,
-::after {
-    box-sizing: border-box;
-}
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
 
-#about,
-.education-card,
-.courses-exams .list-group-item,
-.navbar,
-.jumbotron,
-.btn-primary,
-footer,
-.card,
-.list-group-item {
-    background-color: #1e1e1e;
-    border: 2px solid #404040;
-    border-radius: 10px;
-}
+      #about,
+      .education-card,
+      .courses-exams .list-group-item,
+      .navbar,
+      .jumbotron,
+      .btn-primary,
+      footer,
+      .card,
+      .list-group-item {
+        background-color: #1e1e1e;
+        border: 2px solid #404040;
+        border-radius: 10px;
+      }
 
-.navbar-nav .nav-link,
-.jumbotron .lead,
-.list-group-item,
-.card-title,
-.btn-primary,
-footer p {
-    color: #e0e0e0;
-}
+      .navbar-nav .nav-link,
+      .jumbotron .lead,
+      .list-group-item,
+      .card-title,
+      .btn-primary,
+      footer p {
+        color: #e0e0e0;
+      }
 
-.navbar-nav .nav-link:hover,
-.btn-primary:hover {
-    color: #b0b0b0;
-    background-color: #5a5a5a;
-}
+      .navbar-nav .nav-link:hover,
+      .btn-primary:hover {
+        color: #b0b0b0;
+        background-color: #5a5a5a;
+      }
 
-#about {
-    padding: 20px;
-    margin: 0 15px;
-}
+      #about {
+        padding: 20px;
+        margin: 0 15px;
+      }
 
-.list-group-item {
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+      .list-group-item {
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
 
-.header-title {
-    font-size: 2.5rem;
-}
+      .header-title {
+        font-size: 2.5rem;
+      }
 
-.section-title {
-    font-size: 1.75rem;
-    margin-top: 20px;
-}
+      .section-title {
+        font-size: 1.75rem;
+        margin-top: 20px;
+      }
 
-.education-card {
-    padding: 10px;
-    margin-bottom: 20px;
-}
+      .education-card {
+        padding: 10px;
+        margin-bottom: 20px;
+      }
 
-.project-image {
-    width: 100%;
-    height: auto;
-}
+      .project-image {
+        width: 100%;
+        height: auto;
+      }
     </style>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about"><i
-                                class="fas fa-user"></i> About Me</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="#education"><i
-                                class="fas fa-graduation-cap"></i>
-                            Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#details"><i
-                                class="fas fa-info-circle"></i> Details</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects"><i
-                                class="fas fa-project-diagram"></i>
-                            Projects</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="contact.html"><i class="fas fa-envelope"></i>
-                            Contact Form</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="https://github.com/Pawelek1235"
-                            target="_blank"><i class="fab fa-github"></i>
-                            GitHub</a></li>
-                </ul>
-            </div>
-        </nav>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about"
+              ><i class="fas fa-user"></i> About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education"
+              ><i class="fas fa-graduation-cap"></i> Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#details"
+              ><i class="fas fa-info-circle"></i> Details</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"
+              ><i class="fas fa-project-diagram"></i> Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"
+              ><i class="fas fa-envelope"></i> Contact Form</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://github.com/Pawelek1235"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-        <!-- Header -->
-        <header class="jumbotron jumbotron-fluid text-center text-white">
-            <div class="container">
-                <h1 class="display-4 header-title">Welcome to my portfolio!</h1>
-                <p class="lead">See my projects and learn more about me.</p>
-            </div>
-        </header>
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid text-center text-white">
+      <div class="container">
+        <h1 class="display-4 header-title">Welcome to my portfolio!</h1>
+        <p class="lead">See my projects and learn more about me.</p>
+      </div>
+    </header>
 
-        <!-- Progress Bar -->
-        <div id="progress-bar">
-            <div id="progress"></div>
+    <!-- Progress Bar -->
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-white text-center">
+      <div class="container">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              Hello! My name is Paweł Tokarczyk, and I am a passionate software
+              developer and technology enthusiast from Limanowa. I have been
+              immersed in the world of coding and technology since my teenage
+              years, and over time, this hobby has transformed into a fulfilling
+              career. My journey into the tech world began with a fascination
+              for how things work, and it was this curiosity that led me to
+              explore programming languages and software development.
+            </p>
+            <p>
+              I pursued my formal education in Computer Science, where I gained
+              a solid foundation in various programming languages, algorithms,
+              and data structures. My academic journey provided me with the
+              theoretical knowledge and practical skills necessary to excel in
+              the field of software development. During my studies, I was
+              particularly drawn to the fields of web development and game
+              development, which allowed me to combine my technical skills with
+              my creative interests.
+            </p>
+            <p>
+              Over the years, I have worked on numerous projects, ranging from
+              simple websites to complex software applications. Each project has
+              been an opportunity to learn and grow, pushing the boundaries of
+              what I thought was possible. My experience includes working with
+              languages and frameworks such as C#, JavaScript, Angular, React,
+              and C++. I have a deep understanding of both front-end and
+              back-end development, allowing me to create seamless and efficient
+              applications.
+            </p>
+            <p>
+              In addition to my technical skills, I pride myself on my
+              creativity, cooperation skills, punctuality, and patience. These
+              attributes have not only helped me succeed in my professional
+              endeavors but have also made me a valuable team member in
+              collaborative projects. I believe that the best solutions come
+              from diverse perspectives and open communication, and I strive to
+              foster these principles in every team I work with.
+            </p>
+            <p>
+              Apart from my professional life, I have a wide range of interests
+              that keep me inspired and motivated. I enjoy coding not just as a
+              profession but also as a hobby, constantly exploring new
+              technologies and frameworks. Game development is another passion
+              of mine, as it allows me to blend my love for storytelling and
+              technology. I also have a keen interest in video editing, which
+              has taught me the importance of attention to detail and
+              creativity.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-5 text-white text-center">
-            <div class="container">
-                <h2><i class="fas fa-user"></i> About Me</h2>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Hello! My name is Paweł Tokarczyk, and I am a
-                            passionate software developer and technology
-                            enthusiast from Limanowa. I have been immersed in
-                            the world of coding and technology since my teenage
-                            years, and over time, this hobby has transformed
-                            into a fulfilling career. My journey into the tech
-                            world began with a fascination for how things work,
-                            and it was this curiosity that led me to explore
-                            programming languages and software development.</p>
-                        <p>I pursued my formal education in Computer Science,
-                            where I gained a solid foundation in various
-                            programming languages, algorithms, and data
-                            structures. My academic journey provided me with the
-                            theoretical knowledge and practical skills necessary
-                            to excel in the field of software development.
-                            During my studies, I was particularly drawn to the
-                            fields of web development and game development,
-                            which allowed me to combine my technical skills with
-                            my creative interests.</p>
-                        <p>Over the years, I have worked on numerous projects,
-                            ranging from simple websites to complex software
-                            applications. Each project has been an opportunity
-                            to learn and grow, pushing the boundaries of what I
-                            thought was possible. My experience includes working
-                            with languages and frameworks such as C#,
-                            JavaScript, Angular, React, and C++. I have a deep
-                            understanding of both front-end and back-end
-                            development, allowing me to create seamless and
-                            efficient applications.</p>
-                        <p>In addition to my technical skills, I pride myself on
-                            my creativity, cooperation skills, punctuality, and
-                            patience. These attributes have not only helped me
-                            succeed in my professional endeavors but have also
-                            made me a valuable team member in collaborative
-                            projects. I believe that the best solutions come
-                            from diverse perspectives and open communication,
-                            and I strive to foster these principles in every
-                            team I work with.</p>
-                        <p>Apart from my professional life, I have a wide range
-                            of interests that keep me inspired and motivated. I
-                            enjoy coding not just as a profession but also as a
-                            hobby, constantly exploring new technologies and
-                            frameworks. Game development is another passion of
-                            mine, as it allows me to blend my love for
-                            storytelling and technology. I also have a keen
-                            interest in video editing, which has taught me the
-                            importance of attention to detail and
-                            creativity.</p>
-                    </div>
-                </div>
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-graduation-cap"></i> Education
+        </h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="education-card">
+              <p>
+                <i class="fas fa-school"></i>
+                <strong>Technik Programista - ZSTIO Limanowa</strong>
+                (2019-2023)
+              </p>
+              <p>
+                Science direction: IT Specialist (finished with titles of IT and
+                Programming Technician)
+              </p>
             </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="py-5 bg-dark text-white text-center">
-            <div class="container">
-                <h2 class="section-title"><i class="fas fa-graduation-cap"></i>
-                    Education</h2>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="education-card">
-                            <p><i class="fas fa-school"></i> <strong>Technik
-                                    Programista - ZSTIO Limanowa</strong>
-                                (2019-2023)</p>
-                            <p>Science direction: IT Specialist (finished with
-                                titles of IT and Programming Technician)</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="education-card">
-                            <p><i class="fas fa-university"></i>
-                                <strong>Informatyka Stosowana - WSEI
-                                    Kraków</strong> (2023-now)</p>
-                            <p>Science direction: IT Specialist</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="education-card">
+              <p>
+                <i class="fas fa-university"></i>
+                <strong>Informatyka Stosowana - WSEI Kraków</strong> (2023-now)
+              </p>
+              <p>Science direction: IT Specialist</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Languages Section -->
-        <section id="languages"
-            class="py-5 bg-secondary text-white text-center">
-            <div class="container">
-                <h2 class="section-title"><i class="fas fa-language"></i>
-                    Languages</h2>
+    <!-- Languages Section -->
+    <section id="languages" class="py-5 bg-secondary text-white text-center">
+      <div class="container">
+        <h2 class="section-title"><i class="fas fa-language"></i> Languages</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">POLISH - Native</li>
+          <li class="list-group-item">ENGLISH - C1 (Advanced)</li>
+          <li class="list-group-item">GERMAN - B1 (Intermediate)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Courses and Exams Section -->
+    <section id="courses" class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-book"></i> Courses and Exams
+        </h2>
+        <ul class="list-group list-group-flush courses-exams">
+          <li class="list-group-item">CISCO IT Essentials</li>
+          <li class="list-group-item">CISCO CCNA</li>
+          <li class="list-group-item">EE.08</li>
+          <li class="list-group-item">INF.02</li>
+          <li class="list-group-item">INF.03</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills and Interests Section -->
+    <section id="details" class="py-5 bg-secondary text-white text-center">
+      <div class="container">
+        <h2>Details</h2>
+        <div class="row">
+          <!-- Contact -->
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <i class="fas fa-address-book"></i> Contact
+                </h3>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">POLISH - Native</li>
-                    <li class="list-group-item">ENGLISH - C1 (Advanced)</li>
-                    <li class="list-group-item">GERMAN - B1 (Intermediate)</li>
+                  <li class="list-group-item">
+                    <i class="fas fa-phone"></i> +48 601 573 264
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-envelope"></i> elc.pawel@interia.pl
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-map-marker-alt"></i> Limanowa
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-map-marker-alt"></i> 34-600
+                  </li>
                 </ul>
+              </div>
             </div>
-        </section>
-
-        <!-- Courses and Exams Section -->
-        <section id="courses" class="py-5 bg-dark text-white text-center">
-            <div class="container">
-                <h2 class="section-title"><i class="fas fa-book"></i> Courses
-                    and Exams</h2>
-                <ul class="list-group list-group-flush courses-exams">
-                    <li class="list-group-item">CISCO IT Essentials</li>
-                    <li class="list-group-item">CISCO CCNA</li>
-                    <li class="list-group-item">EE.08</li>
-                    <li class="list-group-item">INF.02</li>
-                    <li class="list-group-item">INF.03</li>
+          </div>
+          <!-- Personal Skills -->
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-star"></i> Skills</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <i class="fas fa-lightbulb"></i> Creativity
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-users"></i> Cooperation skills
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-clock"></i> Punctuality
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-balance-scale"></i> Patience
+                  </li>
                 </ul>
+              </div>
             </div>
-        </section>
+          </div>
+          <!-- Interests -->
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <i class="fas fa-heart"></i> Interests
+                </h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <i class="fas fa-code"></i> Coding
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-gamepad"></i> Game Development
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-video"></i> Video editing
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fas fa-lightbulb"></i> New technologies
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Programming Languages -->
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <i class="fas fa-code"></i> Programming Languages
+                </h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <i class="fab fa-cuttlefish"></i> C#
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fab fa-js"></i> JavaScript
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fab fa-cuttlefish"></i> C++
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fab fa-angular"></i> Angular/React
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Skills and Interests Section -->
-        <section id="details" class="py-5 bg-secondary text-white text-center">
-            <div class="container">
-                <h2>Details</h2>
-                <div class="row">
-                    <!-- Contact -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title"><i
-                                        class="fas fa-address-book"></i>
-                                    Contact</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><i
-                                            class="fas fa-phone"></i> +48 601
-                                        573 264</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-envelope"></i>
-                                        elc.pawel@interia.pl</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-map-marker-alt"></i>
-                                        Limanowa</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-map-marker-alt"></i>
-                                        34-600</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Personal Skills -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title"><i
-                                        class="fas fa-star"></i> Skills</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><i
-                                            class="fas fa-lightbulb"></i>
-                                        Creativity</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-users"></i>
-                                        Cooperation skills</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-clock"></i>
-                                        Punctuality</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-balance-scale"></i>
-                                        Patience</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Interests -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title"><i
-                                        class="fas fa-heart"></i> Interests</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><i
-                                            class="fas fa-code"></i> Coding</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-gamepad"></i> Game
-                                        Development</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-video"></i> Video
-                                        editing</li>
-                                    <li class="list-group-item"><i
-                                            class="fas fa-lightbulb"></i> New
-                                        technologies</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Programming Languages -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title"><i
-                                        class="fas fa-code"></i> Programming
-                                    Languages</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><i
-                                            class="fab fa-cuttlefish"></i>
-                                        C#</li>
-                                    <li class="list-group-item"><i
-                                            class="fab fa-js"></i>
-                                        JavaScript</li>
-                                    <li class="list-group-item"><i
-                                            class="fab fa-cuttlefish"></i>
-                                        C++</li>
-                                    <li class="list-group-item"><i
-                                            class="fab fa-angular"></i>
-                                        Angular/React</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-project-diagram"></i> Projects
+        </h2>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100 bg-secondary text-white">
+              <div class="card-body">
+                <h3 class="card-title">Rogue RPG</h3>
+                <p class="card-text">
+                  My first major project was a traditional Roguelike with
+                  elements of bullet hell. While coding it, I created a few game
+                  systems. It features text mode graphics, a simple menu system,
+                  and a variety of weapons and enemies. It was made using the
+                  PDCurses library in C++. This project taught me to create a
+                  working prototype of a complex system.
+                </p>
+                <a
+                  href="https://github.com/Pawelek1235?tab=repositories"
+                  class="btn btn-primary"
+                  >View on GitHub</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100 bg-secondary text-white">
+              <div class="card-body">
+                <h3 class="card-title">Building Corporation Website</h3>
+                <p class="card-text">
+                  A project for a real client made in my first class of
+                  technical high school, using the latest technology at that
+                  time (Spring Boot). The website featured a simple but elegant
+                  UI and back-end, thanks to Spring Boot. This project taught me
+                  a lot about creating a dynamic website.
+                </p>
+                <a
+                  href="https://github.com/Pawelek1235?tab=repositories"
+                  class="btn btn-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100 bg-secondary text-white">
+              <div class="card-body">
+                <h3 class="card-title">CRUD Web Application</h3>
+                <p class="card-text">
+                  One of the projects for my technical high school diploma. The
+                  goal was to create a database with a UI for easy manipulation.
+                  I used technologies such as JavaScript, Node.js, and MySQL.
+                  This project taught me the core concepts of CRUD (Create,
+                  Read, Update, Delete) and database manipulation.
+                </p>
+                <a
+                  href="https://github.com/Pawelek1235?tab=repositories"
+                  class="btn btn-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100 bg-secondary text-white">
+              <div class="card-body">
+                <h3 class="card-title">E-commerce Platform</h3>
+                <p class="card-text">
+                  A full-featured e-commerce platform developed using React for
+                  the front-end and Node.js for the back-end. This project
+                  includes user authentication, product management, and payment
+                  processing. It was a comprehensive learning experience that
+                  covered both front-end and back-end development.
+                </p>
+                <a
+                  href="https://github.com/Pawelek1235?tab=repositories"
+                  class="btn btn-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-5 bg-dark text-white text-center">
-            <div class="container">
-                <h2 class="section-title"><i class="fas fa-project-diagram"></i>
-                    Projects</h2>
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100 bg-secondary text-white">
-                            <div class="card-body">
-                                <h3 class="card-title">Rogue RPG</h3>
-                                <p class="card-text">My first major project was
-                                    a traditional Roguelike with elements of
-                                    bullet hell. While coding it, I created a
-                                    few game systems. It features text mode
-                                    graphics, a simple menu system, and a
-                                    variety of weapons and enemies. It was made
-                                    using the PDCurses library in C++. This
-                                    project taught me to create a working
-                                    prototype of a complex system.</p>
-                                <a
-                                    href="https://github.com/Pawelek1235?tab=repositories"
-                                    class="btn btn-primary">View on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100 bg-secondary text-white">
-                            <div class="card-body">
-                                <h3 class="card-title">Building Corporation
-                                    Website</h3>
-                                <p class="card-text">A project for a real client
-                                    made in my first class of technical high
-                                    school, using the latest technology at that
-                                    time (Spring Boot). The website featured a
-                                    simple but elegant UI and back-end, thanks
-                                    to Spring Boot. This project taught me a lot
-                                    about creating a dynamic website.</p>
-                                <a
-                                    href="https://github.com/Pawelek1235?tab=repositories"
-                                    class="btn btn-primary">View on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100 bg-secondary text-white">
-                            <div class="card-body">
-                                <h3 class="card-title">CRUD Web Application</h3>
-                                <p class="card-text">One of the projects for my
-                                    technical high school diploma. The goal was
-                                    to create a database with a UI for easy
-                                    manipulation. I used technologies such as
-                                    JavaScript, Node.js, and MySQL. This project
-                                    taught me the core concepts of CRUD (Create,
-                                    Read, Update, Delete) and database
-                                    manipulation.</p>
-                                <a
-                                    href="https://github.com/Pawelek1235?tab=repositories"
-                                    class="btn btn-primary">View on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100 bg-secondary text-white">
-                            <div class="card-body">
-                                <h3 class="card-title">E-commerce Platform</h3>
-                                <p class="card-text">A full-featured e-commerce
-                                    platform developed using React for the
-                                    front-end and Node.js for the back-end. This
-                                    project includes user authentication,
-                                    product management, and payment processing.
-                                    It was a comprehensive learning experience
-                                    that covered both front-end and back-end
-                                    development.</p>
-                                <a
-                                    href="https://github.com/Pawelek1235?tab=repositories"
-                                    class="btn btn-primary">View on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-secondary text-white text-center">
+      <div class="container">
+        <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+        <p>
+          Do you have any questions or would like to discuss a potential
+          collaboration? Feel free to reach out to me through the contact form,
+          and I will get back to you as soon as possible.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Contact Form</a>
+      </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-5 bg-secondary text-white text-center">
-            <div class="container">
-                <h2 class="section-title"><i class="fas fa-envelope"></i>
-                    Contact</h2>
-                <p>Do you have any questions or would like to discuss a
-                    potential collaboration? Feel free to reach out to me
-                    through the contact form, and I will get back to you as soon
-                    as possible.</p>
-                <a href="contact.html" class="btn btn-primary">Contact Form</a>
-            </div>
-        </section>
+    <!-- Footer -->
+    <footer class="py-4 text-center text-white">
+      <div class="container">
+        <p>&copy; 2024 Paweł Tokarczyk. All rights reserved.</p>
+      </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="py-4 text-center text-white">
-            <div class="container">
-                <p>&copy; 2024 Paweł Tokarczyk. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
